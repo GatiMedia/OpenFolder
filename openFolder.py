@@ -1,3 +1,12 @@
+# ----- CREATE UTILITIES MENU & ASSIGN ITEMS -------------------
+
+#IF DON'T HAVE A MENU YET
+
+utilitiesMenu = nuke.menu('Nuke').addMenu('My Menu')
+
+utilitiesMenu.addCommand( 'message', "nuke.message('yay, it works')", index=0 )
+
+
 # Written by Attila Gasparetz based on https://community.foundry.com/discuss/topic/154100/how-to-open-folder-from-write-node
 
 def openFolder():
